@@ -12,19 +12,19 @@
    **Authentication**:<br>
             there is no Authentication , but you should include the user id (a valid user id ) in the HTTP header.
    
-   ### Error Codes ###:<br>
+   **Error Codes**:<br>
    - 404 : if the code number is not valid.
    - 204 : if the products table is empty.
    - 401 : if the user id is not valid (not in the Database).
    - 400 : if the request is not valid (if the user_id is missing from the HTTP header )
    - 500 : if there is any error happen on the server
 
-   - Request to be sent (without parameters) [with curl]:
+   **Request to be sent (without parameters) [with curl]:**<br>
    
 ```
 curl --location --request GET 'http://localhost:8000/products' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
 ```
-   - The Response::<br>
+   **The Response:**<br>
 
 ```
 {
