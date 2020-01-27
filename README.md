@@ -24,7 +24,7 @@
 ```
 curl --location --request GET 'http://localhost:8000/products' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
 ```
-   **The Response:**<br>
+   **⋅⋅⋅The Response:**<br>
 
 ```
 {
