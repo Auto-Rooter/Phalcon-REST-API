@@ -154,8 +154,6 @@
                     }
                 }
 
-================================================================[End of GET: /products End-Point]===============================
-
 
 # 2- GET: /product/{productID}
 
@@ -196,10 +194,9 @@
 
 
 
-================================[End of GET: /product/{productID} End-Point]===============================
 
 
-3- PUT: /product/{productID}
+#3- PUT: /product/{productID}
 
         # Introduction
             Update a specific product with a givin ID in the URL, also the user who send the request(the User id in the Http Header in the request) should be the creator of this product.
@@ -223,10 +220,9 @@
             The Response:
                 No Response , Just 204 status code
 
-================================================================[End of PUT: /product/{productID} End-Point]===============================
 
 
-4- POST: /rate/{productID}
+#4- POST: /rate/{productID}
 
         # Introduction
             Create a rate for a specific product with a givin ID in the URL.
@@ -251,4 +247,4 @@
             The Response:
                 No Response , Just 201 status code
 
-================================================================[End of POST: /rate/{productID} End-Point]===============================
+
