@@ -3,16 +3,16 @@
             Returns the full list of products.
             Optional Features: (Pagination , Code filtering)
 
-   **Overview**
+   **Overview**:<br>
             if you add the 'page' parameter in the url followed by the page number(http://localhost:8000/products?page=1) , then it will             return two products per page.
             if you dont add the 'page' parameter then all products will be loaded in one page.
             if you add 'code' parameter in the url followed by the product code ,
             (http://localhost:8000/products?code=123456) , then the product or all the products with the same code will be returned .(No               Pagination here)
 
-   **Authentication**
+   **Authentication**:<br>
             there is no Authentication , but you should include the user id (a valid user id ) in the HTTP header.
    
-   ### Error Codes ###
+   ### Error Codes ###:<br>
    - 404 : if the code number is not valid.
    - 204 : if the products table is empty.
    - 401 : if the user id is not valid (not in the Database).
@@ -24,7 +24,7 @@
 ```
 curl --location --request GET 'http://localhost:8000/products' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
 ```
-   - The Response:
+   - The Response::<br>
 
 ```
 {
