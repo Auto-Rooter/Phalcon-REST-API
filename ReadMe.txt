@@ -1,4 +1,4 @@
-1- GET: /products
+# 1- GET: /products
 
         # Introduction
             Returns the full list of products.
@@ -26,7 +26,7 @@
                 curl --location --request GET 'http://localhost:8000/products' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
 
                 The Response:
-
+```
                                 {
                     "status": "OK",
                     "data": {
@@ -86,7 +86,7 @@
                         "last": 1
                     }
                 }
-
+```
             - Request to be sent (with page=1 parameter) [with curl]:
                 curl --location --request GET 'http://localhost:8000/products?page=1' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
 
@@ -157,7 +157,7 @@
 ================================================================[End of GET: /products End-Point]===============================
 
 
-2- GET: /product/{productID}
+# 2- GET: /product/{productID}
 
         # Introduction
             Returns a specific product with a givin ID in the URL.
