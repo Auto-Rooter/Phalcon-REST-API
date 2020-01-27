@@ -1,23 +1,23 @@
 # 1- GET: /products #
    **Introduction**:<br>
-            Returns the full list of products.
+           &nbsp;&nbsp; Returns the full list of products.
             Optional Features: (Pagination , Code filtering)
 
    **Overview**:<br>
-            if you add the 'page' parameter in the url followed by the page number(http://localhost:8000/products?page=1) , then it will             return two products per page.
+           &nbsp;&nbsp; if you add the 'page' parameter in the url followed by the page number(http://localhost:8000/products?page=1) , then it will             return two products per page.
             if you dont add the 'page' parameter then all products will be loaded in one page.
             if you add 'code' parameter in the url followed by the product code ,
             (http://localhost:8000/products?code=123456) , then the product or all the products with the same code will be returned .(No               Pagination here)
 
    **Authentication**:<br>
-            there is no Authentication , but you should include the user id (a valid user id ) in the HTTP header.
+          &nbsp;&nbsp;  there is no Authentication , but you should include the user id (a valid user id ) in the HTTP header.
    
    **Error Codes**:<br>
-   - 404 : if the code number is not valid.
-   - 204 : if the products table is empty.
-   - 401 : if the user id is not valid (not in the Database).
-   - 400 : if the request is not valid (if the user_id is missing from the HTTP header )
-   - 500 : if there is any error happen on the server
+   &nbsp;&nbsp;- 404 : if the code number is not valid.
+   &nbsp;&nbsp;- 204 : if the products table is empty.
+   &nbsp;&nbsp;- 401 : if the user id is not valid (not in the Database).
+   &nbsp;&nbsp;- 400 : if the request is not valid (if the user_id is missing from the HTTP header )
+   &nbsp;&nbsp;- 500 : if there is any error happen on the server
 
    **1. Request to be sent (without parameters) [with curl]:**<br>
    
@@ -87,11 +87,12 @@ curl --location --request GET 'http://localhost:8000/products' --header 'User_id
                     }
                 }
 ```
-            - Request to be sent (with page=1 parameter) [with curl]:
-                curl --location --request GET 'http://localhost:8000/products?page=1' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
-
-                The Response:
-
+**2. Request to be sent (with page=1 parameter) [with curl]:**<br>
+```
+curl --location --request GET 'http://localhost:8000/products?page=1' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
+```
+   &nbsp;&nbsp;The Response:<br>
+```
                                     {
                     "status": "OK",
                     "data": {
@@ -124,12 +125,13 @@ curl --location --request GET 'http://localhost:8000/products' --header 'User_id
                         "last": 3
                     }
                 }
-
-            - Request to be sent (with code parameter) [with curl]:
-                curl --location --request GET 'http://localhost:8000/products?code=333476' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
-
-                The Response:
-
+```
+**2. Request to be sent (with code parameter) [with curl]:**<br>
+```
+curl --location --request GET 'http://localhost:8000/products?code=333476' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
+```
+   &nbsp;&nbsp;The Response:<br>
+```
                                 {
                     "status": "OK",
                     "data": {
@@ -154,7 +156,7 @@ curl --location --request GET 'http://localhost:8000/products' --header 'User_id
                     }
                 }
 
-
+```
 # 2- GET: /product/{productID}
 
         # Introduction
