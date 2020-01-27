@@ -26,7 +26,7 @@
                 curl --location --request GET 'http://localhost:8000/products' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
 
                 The Response:
-```
+
                                 {
                     "status": "OK",
                     "data": {
@@ -86,7 +86,7 @@
                         "last": 1
                     }
                 }
-```
+
             - Request to be sent (with page=1 parameter) [with curl]:
                 curl --location --request GET 'http://localhost:8000/products?page=1' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
 
