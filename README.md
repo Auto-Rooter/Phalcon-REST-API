@@ -19,7 +19,7 @@
    - 400 : if the request is not valid (if the user_id is missing from the HTTP header )
    - 500 : if there is any error happen on the server
 
-   **Request to be sent (without parameters) [with curl]:**<br>
+   **1. Request to be sent (without parameters) [with curl]:**<br>
    
 ```
 curl --location --request GET 'http://localhost:8000/products' --header 'User_id: 2' --header 'Content-Type: application/x-www-form-urlencoded'
