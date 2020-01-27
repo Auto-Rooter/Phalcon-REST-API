@@ -1,0 +1,7 @@
+{
+    "require-dev": {
+    },
+    "require": {
+        "phalcon/devtools": "^4.0"
+    }
+}
