@@ -1,6 +1,6 @@
 # 1- GET: /products
 
-        # Introduction
+        ## Introduction
             Returns the full list of products.
             Optional Features: (Pagination , Code filtering)
 
@@ -196,7 +196,7 @@
 
 
 
-#3- PUT: /product/{productID}
+# 3- PUT: /product/{productID}
 
         # Introduction
             Update a specific product with a givin ID in the URL, also the user who send the request(the User id in the Http Header in the request) should be the creator of this product.
@@ -222,9 +222,9 @@
 
 
 
-#4- POST: /rate/{productID}
+# 4- POST: /rate/{productID}
 
-        # Introduction
+        ## Introduction
             Create a rate for a specific product with a givin ID in the URL.
 
         # Overview
