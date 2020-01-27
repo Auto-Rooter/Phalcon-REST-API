@@ -1,6 +1,6 @@
 # 1- GET: /products
 
-        ## Introduction
+        **Introduction**
             Returns the full list of products.
             Optional Features: (Pagination , Code filtering)
 
