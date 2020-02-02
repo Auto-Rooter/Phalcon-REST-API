@@ -207,7 +207,7 @@ curl --location --request GET 'http://localhost:8000/product/1' --header 'User_i
 
  **Overview:**<br>
 &nbsp;&nbsp;you should add the product id in the url (http://localhost:8000/product/5) ,and include all product parameters (name, code, description and price).<br>
-&nbsp;&nbsp;if the product is updated successfully it will return 204 Response code
+&nbsp;&nbsp;if the product is updated successfully it will return 204 Response code.<br>
 **Authentication:**<br>
 &nbsp;&nbsp;there is no Authentication , but you should include the user id (a valid user id ) in the HTTP header.
 
