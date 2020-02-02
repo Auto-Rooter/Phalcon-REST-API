@@ -214,7 +214,7 @@ curl --location --request GET 'http://localhost:8000/product/1' --header 'User_i
  **Error Codes:**<br>
 &nbsp;&nbsp;404 : if the product id is not valid (or product id is missed from URL) / if the End-point address or HTTP protocl is not defined .<br>
 &nbsp;&nbsp;401 : if the user id is not valid (not in the Database), or the user id that been extracted from HTTP header not equal the user id for the user who created the product.<br>
-&nbsp;&nbsp;400 : if the request is not valid (if the user_id is missing from the HTTP header or the product parameters are not valied or one of it is missed).<br>
+&nbsp;&nbsp;400 : if the request is not valid (if the user_id is missing from the HTTP header or the product parameters are not valied or one of them is missed).<br>
 &nbsp;&nbsp;500 : if there is any error happen on the server.<br>
 
 
